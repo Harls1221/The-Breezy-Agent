@@ -6,7 +6,7 @@
 }
 
 .navbar {
-  background: #555454;
+  background: #e8eceb;
   height: 120px;
   display: flex;
   justify-content: center;
@@ -15,6 +15,7 @@
   position: sticky;
   z-index: 999;
   top: 0;
+  box-shadow: 0px 0px 10px rgb(48, 47, 47);
 }
 
 .navbar__container {
@@ -59,7 +60,7 @@
 
 .navbar__links {
   display: flex;
-  color: #fff;
+  color: rgb(139, 139, 139);
   align-items: center;
   justify-content: center;
   text-decoration: none;
@@ -195,7 +196,7 @@
 /*Hero section*/
 
 .hero {
-  background-color: #386458;
+  background-color: #589988;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -239,7 +240,7 @@
 /*Blogs Menu CSS*/
 
 .blogs__container {
-  background-color: #386458;
+  background-color: #589988;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -254,10 +255,10 @@
 
 .blogs__img--container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   justify-content: center;
   align-items: center;
-  grid-gap: 200px;
+  grid-gap: 100px;
 }
 
 .blogs__img--card {
@@ -265,18 +266,27 @@
   height: 590px;
   width: 400px;
   border-radius: 4px;
-  background-image: url(images/Digital\ Tools\ I\ Use\ As\ A\ Realtor.jpg);
+  background-image: url(images/digital_tools.jpg);
   background-size: cover;
+  box-shadow: 0px 0px 10px rgb(48, 47, 47);
+  transition: all 0.2s ease-in-out;
+  margin-bottom: 50px;
 }
 
 .blogs__img--card:nth-child(2) {
-  background-image: url(images/Digital\ Tools\ I\ Use\ As\ A\ Realtor.jpg);
+  background-image: url(images/shoes.jpg);
+  color: pink;
 }
 
 .blogs__img--card:nth-child(3) {
-  background-image: url(images/Digital\ Tools\ I\ Use\ As\ A\ Realtor.jpg);
+  background-image: url(images/tools.jpg);
 }
-
+.blogs__img--card:nth-child(4) {
+  background-image: url(images/imposter.jpg);
+}
+.blogs__img--card:hover {
+  transform: scale(1.05);
+}
 /*Blog CSS*/
 
 article {
@@ -285,6 +295,7 @@ article {
   align-items: center;
   flex-direction: column;
   background-color: #fff;
+  margin-bottom: 50px;
 }
 
 .blog__titles {
@@ -295,7 +306,7 @@ article {
   color: #df7063;
 }
 
-.blog_paragraph {
+.blog__paragraph {
   font-family: "Playfair Display", serif;
   font-size: 1.5em;
   width: 60%;
@@ -303,7 +314,7 @@ article {
 }
 
 .blog__headings {
-  font-family: "Quicksand", sans-serif;
+  font-family: "Quick Sand" sans-serif;
   margin: 10px;
   padding: 20px;
   font-size: 2em;
@@ -318,7 +329,8 @@ article {
 }
 
 #sincerely {
-  margin-top: 20px;
+  margin-top: 30px;
+  width: 60%;
 }
 
 .blog__list--container {
@@ -326,4 +338,22 @@ article {
   padding: 20px;
   font-size: 1.5em;
   line-height: 2em;
+}
+.footer__container {
+  background-color: #e8eceb;
+  color: rgb(41, 40, 40);
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  position: sticky;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  box-shadow: 0px 0px 10px rgb(48, 47, 47);
+}
+
+.social__icon--link {
+  padding: 10px;
 }
